@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Samsung Account Login</title>
+  <style>
+    body {
+    margin: 0;
+    background: #000;
+    font-family: Arial, sans-serif;
+    color: white;
+    }
+
+    .account-header {
+    height: 90px;
+    background: #111;
+    display: flex;
+    align-items: center;
+    padding-left: 140px;
+    }
+
+    .account-header h2 {
+    font-size: 28px;
+    }
+
+    .login-page {
+    min-height: calc(100vh - 90px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .login-box {
+    width: 560px;
+    background: #181818;
+    border-radius: 28px;
+    padding: 55px 70px;
+    text-align: center;
+    }
+
+    .login-box h1 {
+    font-size: 30px;
+    line-height: 1.4;
+    }
+
+    .login-box p {
+    font-size: 20px;
+    margin-bottom: 70px;
+    }
+
+    form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    }
+
+    form label {
+    color: #1e90ff;
+    font-size: 14px;
+    }
+
+    form input[type="text"] {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #007bff;
+    padding: 12px 0;
+    color: white;
+    font-size: 18px;
+    outline: none;
+    }
+
+    .remember-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 15px 0 35px;
+    }
+
+    .remember-row label {
+    color: white;
+    font-weight: bold;
+    }
+
+    form button {
+    background: #0b5cab;
+    color: #999;
+    border: none;
+    padding: 15px;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    }
+
+    form a {
+    color: #aaa;
+    margin-top: 25px;
+    font-weight: bold;
+    }
+
+    .google-btn {
+    margin-top: 30px;
+    background: #777;
+    color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="account-header">
+    <h2>Samsung Account</h2>
+  </header>
+
+  <main class="login-page">
+    <div class="login-box">
+      <h1>One account. Any device.<br>Just for you.</h1>
+      <p>Sign in to get started</p>
+
+      <form>
+        <label>Phone number or email</label>
+        <input type="text">
+
+        <div class="remember-row">
+          <input type="checkbox" id="remember">
+          <label for="remember">Remember my ID</label>
+        </div>
+
+        <button type="submit">Next</button>
+
+        <a href="#">Find ID</a>
+        <a href="register.html">Create account</a>
+
+        <button class="google-btn" type="button">G Sign in with Google</button>
+      </form>
+    </div>
+  </main>
+
+</body>
+</html>
